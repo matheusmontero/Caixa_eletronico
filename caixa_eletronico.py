@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 print('=' * 20, 'CAIXA ELETRÔNICO', '=' * 20)
+=======
+print('=' * 20 , 'CAIXA ELETRÔNICO' , '=' * 20 )
+>>>>>>> 242e6f94fff88be691eca4be265dbeb41b0f3d68
 saldo = float(input('Diga um saldo para começarmos: '))
 print('==' * 30)
 print('Saldo inicial de R${:.2f}'.format(saldo))
@@ -31,5 +35,9 @@ while True:
         break
 
     else:
+<<<<<<< HEAD
         print('Opção inválida, tente novamente')
 
+=======
+        print('Opção inválida, tente novamente ')
+>>>>>>> 242e6f94fff88be691eca4be265dbeb41b0f3d68
