@@ -1,62 +1,35 @@
-<<<<<<< HEAD
-print('=' * 20 , 'CAIXA ELETRÔNICO' , '=' * 20 )
+print('=' * 20, 'CAIXA ELETRÔNICO', '=' * 20)
 saldo = float(input('Diga um saldo para começarmos: '))
 print('==' * 30)
 print('Saldo inicial de R${:.2f}'.format(saldo))
+
 while True:
     print('1 - Ver saldo | 2 - Depositar | 3 - Fazer saque | 4 - Sair')
     opcao = input('Escolha uma opcao: ')
+
     if opcao == '1':
-        print('Seu saldo é de R${:.2f} '.format(saldo))
+        print('Seu saldo é de R${:.2f}'.format(saldo))
+
     elif opcao == '2':
         valor = float(input('Valor do depósito: R$'))
         if valor > 0:
             saldo += valor
-            print('Valor do depósito de R${} realizado.'.format(valor))
+            print('Valor do depósito de R${:.2f} realizado.'.format(valor))
         else:
-            print('Valor inválido! ')
+            print('Valor inválido!')
+
     elif opcao == '3':
         valor = float(input('Valor do saque: R$'))
         if valor <= saldo:
             saldo -= valor
-            print('Saque de R${} realizado.'.format(valor))
-        elif valor > saldo:
-            print('Saldo insuficiente.')
+            print('Saque de R${:.2f} realizado.'.format(valor))
         else:
-            print('Valor invalido.')
+            print('Saldo insuficiente.')
+
     elif opcao == '4':
         print('Encerrando... Obrigado!')
         break
+
     else:
-=======
-print('=' * 20 , 'CAIXA ELETRÔNICO' , '=' * 20 )
-saldo = float(input('Diga um saldo para começarmos: '))
-print('==' * 30)
-print('Saldo inicial de R${:.2f}'.format(saldo))
-while True:
-    print('1 - Ver saldo | 2 - Depositar | 3 - Fazer saque | 4 - Sair')
-    opcao = input('Escolha uma opcao: ')
-    if opcao == '1':
-        print('Seu saldo é de R${:.2f} '.format(saldo))
-    elif opcao == '2':
-        valor = float(input('Valor do depósito: R$'))
-        if valor > 0:
-            saldo += valor
-            print('Valor do depósito de R${} realizado.'.format(valor))
-        else:
-            print('Valor inválido! ')
-    elif opcao == '3':
-        valor = float(input('Valor do saque: R$'))
-        if valor <= saldo:
-            saldo -= valor
-            print('Saque de R${} realizado.'.format(valor))
-        elif valor > saldo:
-            print('Saldo insuficiente.')
-        else:
-            print('Valor invalido.')
-    elif opcao == '4':
-        print('Encerrando... Obrigado!')
-        break
-    else:
->>>>>>> 01e08d49c057c91d266a72890327477642384b72
-        print('Opção inválida, tente novamente ')
+        print('Opção inválida, tente novamente')
+
